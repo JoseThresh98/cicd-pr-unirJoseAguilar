@@ -30,6 +30,7 @@ if __name__ == "__main__":
     else:
         print("Se debe indicar el fichero como primer argumento")
         print("El segundo argumento indica si se quieren eliminar duplicados")
+        print("El tercer argumento no exite o es invalido")
         sys.exit(1)
 
     print(f"Se leerán las palabras del fichero {filename}")
@@ -41,9 +42,12 @@ if __name__ == "__main__":
                 word_list.append(line.strip())
     else:
         print(f"El fichero {filename} no existe")
-        word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
+        word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff","narnia","atlantis"]
 
     if remove_duplicates:
         word_list = remove_duplicates_from_list(word_list)
 
     print(sort_list(word_list))
+
+# Se agrega comentario al codigo para realizar un commit al ejercicio
+# Se agrego un print en los else 
